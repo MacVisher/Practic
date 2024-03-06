@@ -18,27 +18,28 @@ main {
   font-family: 'Google Sans', sans-serif;
 }
 
-#aside_slide_button  {
- position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 200px;
-  top: 15px;
-  background: #FCFCFC;
+#aside_slide_button {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 44px;
+    top: 15px;
+    background: #FCFCFC;
     background-color: rgb(252, 252, 252);
-  border-radius: 2000px;
-  border: none;
+    border-radius: 2000px;
+    border: none;
 }
 
 
 #aside_slide_button::before {
-    content: url('../img/arrows.svg'); 
+    content: url(../img/arrows.svg);
     position: absolute;
-    left: 2px; 
-    top: 40%; 
-    transform: translateY(-50%); 
-    width: 20px; 
-    height: 20px; 
+    left: 2px;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
 }
 
 #hat_buttons_help_::before {
@@ -83,20 +84,16 @@ main {
 
 
 .hat {
-  /* h-m */
-
-position: absolute;
-width: 83%;
-height: 72px;
-left: 280px;
-top: 0px;
-
-background: #FCFCFC;
-border-radius: 0px 0px 10px 10px;
-
-display: flex;
-justify-content: space-between;
-margin-top: 0;
+    position: absolute;
+    width: 1460px;
+    height: 72px;
+    left: 384px;
+    top: 0px;
+    background: #FCFCFC;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
 
 }
 
@@ -118,18 +115,14 @@ margin-top: 0;
   display: flex;
 }
 
-aside{
-    /* menu */
-
-position: absolute;
-width: 260px;
-height: 100%;
-left: 0px;
-top: 0px;
-
-background: #FCFCFC;
-border-radius: 0px;
-
+aside {
+    position: absolute;
+    width: 104px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #FCFCFC;
+    border-radius: 0px;
 }
 
 aside img{
@@ -146,7 +139,7 @@ aside img{
   height: 50px;
   border-radius: 10px;
   text-align: left;
-  padding-left: 10%;
+  padding-left: 25%;
   margin-top: 3px;
   margin-bottom: 3px;
   display: inline-flex;
@@ -154,12 +147,25 @@ aside img{
 
 }
 
-aside span{
-  margin-left: 15%;
-  font-size: 14px;
-  color: gray;
-  letter-spacing: 2px;
+aside span {
+    position: relative; /* Изменение позиционирования на относительное */
+    width: 76px;
+    height: auto; /* Позволяет высоте автоматически настраиваться в зависимости от контента */
+    left: calc(50% - 59px/2);
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px; /* Установите желаемую высоту строки */
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #B9B9B9;
+    margin-top: 5px; /* Добавляем отступ между строками */
 }
+
 
 aside button:hover{
   background-color: rgb(223, 242, 227);
@@ -174,10 +180,10 @@ aside img{
   width: 50%;
 }
 
-aside button img{
-  width: 20px;
-  margin: 0;
-  margin-right: 10px;
+aside button img {
+    width: 24px;
+    margin: 0;
+    margin-right: 10px;
 }
 
 
@@ -340,9 +346,9 @@ body-color: #21222D; /* Цвет фона для темной темы */
 
 .f_hat {
     position: fixed;
-    width: 83%;
+    width: 1460px;
     height: 72px;
-    left: 280px;
+    left: 384px;
     top: 80px;
     background: #FCFCFC;
     border-radius: 10px 10px 10px 10px;
@@ -357,9 +363,10 @@ input[type=checkbox]{
 }
 
 .toggle-button {
+    position: fixed;
     cursor: pointer;
-    top: -346px;
-    left: -313px;
+    top: 37px;
+    left: -392px;
     text-indent: -9999px;
     width: 43px;
     height: 24px;
@@ -399,7 +406,7 @@ input:checked + .toggle-button:after {
     position: fixed;
     width: 266px;
     top: 94px;
-    left: 315px;
+    left: 421px;
     height: 44px;
     padding: 12px 20px;
     border-radius: 10px;
@@ -427,9 +434,9 @@ body {
     position: fixed;
     display: inline-block;
     vertical-align: middle;
-    margin-left: -403px;
+    margin-left: 376px;
     color: black;
-    top: 112px;
+    top: 111px;
 }
 .textM {
     font-family: 'Google Sans', sans-serif;
@@ -437,7 +444,7 @@ body {
     width: 192px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: -1548px;
+    margin-left: 34px;
     color: black;
     top: 189px;
     font-size: 16px;
@@ -451,7 +458,7 @@ body {
     height: 44px;
     width: 260px;
     top: 96px;
-    left: 68%;
+    left: 1278px;
     border-radius: 10px;
     border-color: #E9EBEC;
     background-size: cover;
@@ -466,11 +473,11 @@ body {
     border-color: #E9EBEC;
     background-size: cover;
 }
-.block{
-position: fixed;
-    width: 83%;
-    height: 80%;
-    left: 280px;
+.block {
+    position: fixed;
+    width: 1460px;
+    height: 696px;
+    left: 384px;
     top: 170px;
     background: #FCFCFC;
     border-radius: 10px 10px 10px 10px;
@@ -522,4 +529,16 @@ text-align: center;
     position: fixed;
     width: 50px;
     height: 50px;
+}
+.knopki{
+  margin-top: 54px;  
+}
+.menu{
+    position: fixed;
+    width: 260px;
+height: 945px;
+left: 104px;
+
+background: #FCFCFC;
+
 }
