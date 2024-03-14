@@ -9,13 +9,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F4F4F4;
+  font-family: 'Regular 400', sans-serif;
 }
 
 main {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Google Sans', sans-serif;
 }
 
 #aside_slide_button {
@@ -525,11 +525,6 @@ text-align: center;
     text-align: center;
     color: #FCFCFC;
 }
-.table{
-    position: fixed;
-    width: 50px;
-    height: 50px;
-}
 .knopki{
   margin-top: 54px;  
 }
@@ -539,6 +534,200 @@ text-align: center;
 height: 945px;
 left: 104px;
 
-background: #FCFCFC;
+background: #FCFCFC;}
 
+.menu {
+    position: absolute;
+    width: 260px;
+    height: 910px;
+    left: 107px;
+    top: 0px;
+    background: #FCFCFC;
+    border-radius: 0px;
+}
+.menu_butt {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 110px;
+    position: absolute;
+    width: 184px;
+    height: 24px;
+    left: -1px;
+    top: -202px;
+    justify-content: flex-end;
+    background-color: #FCFCFC;
+    border-style: none;
+    flex-direction: row-reverse;
+    font-family: Google Sans;
+font-size: 13px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.uni{
+     display: flex;
+    width: 196px;
+    margin: 0;
+    margin-top: 10px;
+    align-items: center;}
+
+.uni span {
+    margin-left: 20px;
+}
+.nes {
+    position: absolute;
+    width: 162px;
+    height: 57px;
+    left: -6px;
+    top: -306px;
+    font-size: 13px;
+    align-items: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #B9B9B9;
+}
+.mon {
+    position: absolute;
+    top: -125px;
+    left: 10px;
+    width: 136px;
+    height: 17px;
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-size: 13px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #263238;
+    flex-grow: 0;
+    white-space: nowrap;
+}
+.gog {
+    width: 136px;
+    height: 17px;
+    font-family: 'Google Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #263238;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.text_menu{
+position: absolute;
+width: 29px;
+height: 17px;
+left: 40px;
+top: 353px;
+font-family: 'Google Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 17px;
+display: flex;
+align-items: center;
+font-feature-settings: 'tnum' on, 'lnum' on;
+color: #263238;
+}
+
+.main_table_user_status {
+  width: fit-content;
+  border-radius: 10px;
+  border: none;
+  background-color: #DFF2E3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table_container {
+  border: 2px solid #e9ebec;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.main_table_ {
+    width: 100%;
+    border-spacing: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 1388px;
+    height: 642px;
+    left: -9px;
+    top: 48px;
+    background: #FFFFFF;
+    border: 1px solid #E9EBEC;
+    border-radius: 10px;
+}
+
+.main_table_ th, td{
+  border-bottom: 2px solid #e9ebec;
+
+}
+
+.main_table_ tr th div, td div {
+  display: flex;
+  align-items: center;
+
+}
+
+.main_table_ tr th, td {
+  padding: 20px 70px;
+}
+
+.main_table_ tr th:first-child, td:first-child {
+  padding-left: 20px;
+}
+
+.main_table_ th {
+  padding-top: 27px !important;
+  padding-bottom: 27px !important;
+}
+
+
+.selects_buttons {
+  border: none;
+  background-color: white;
+  border-radius: 1px;
+}
+.table_selekt{
+width:207px;
+height:44px;
+border-radius: 8px;
+    border-color: #E9EBEC;
+    background-size: cover;   
+}
+.main_table_ tr:first-child {
+  padding-left: 20px;
+}
+.bottom-row {
+    width: 1388px;
+    height: 27px;
+    padding: 6px 0px 0px 0px;
+    background: #FAFAFA;
+}
+/* Стили для текста */
+#outputText {
+    font-size: 18px;
+    margin-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+#outputText.active {
+    max-height: 100px; /* Высота, до которой будет выдвигаться текст */
+    transition: max-height 0.3s ease-in;
 }

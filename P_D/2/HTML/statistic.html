@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>main page</title>
 	<link rel="stylesheet" type="text/css" href="../CSS/statistic.css">
-<script type="text/javascript" src="../Java/java.js"></script>  
 </head>
 <body>
 	<header>
@@ -38,7 +37,23 @@
 		</div>
 	</header>
 	<div class="menu">
+		<div class="text_menu">
+		<div class="nes"><br><span>NESTED ITEMS</span><br>
+		<div class="uni"><img src="../img/uni.svg" alt="Unit 40 - YAKIMA"><span>Unit 40 - YAKIMA</span><br></div>
+		</div>
+		<button class="menu_butt"><img src="../img/kik.svg">Report</button> <br>
+		<p id="outputText"><br>Monthly Scorecard Report<br>
+		<br>Monthly Trends Report<br>
+		<br>Break-Even Analysis Report<br></p>
+		<div class="mon">
 		
+		</div>
+		<div class="gog">
+		<br>Google Reviews<br>
+		<br>Files<br>
+		<br>Evaluations<br>
+	</div>
+		</div>
 	</div>
 	<div class="f_hat"> 
     <button class="custom-button">Add Additional Month</button>
@@ -48,8 +63,9 @@
     <span class="text">
         Compare units with your same
     </span><br>
+    
     <div>
-        <select class="spisok">
+        <select class="spisok2">
             <option value="вариант1">__</option>
             <option value="вариант2">Вариант 2</option>
             <option value="вариант3">Вариант 3</option>
@@ -57,7 +73,7 @@
         </select>
     </div>
     <div>
-        <select class="spisok2">
+        <select class="spisok">
             <option value="вариант1">__</option>
             <option value="вариант2">Вариант 2</option>
             <option value="вариант3">Вариант 3</option>
@@ -70,11 +86,65 @@
 	<div class="block">
 	<span class="textM">
    	Monthly Scorecard Report
-   	</div>
-</div>
+
 <button class="quik">Quick Actions</button>
 <button class="full"><img src="../img/full.svg" alt="Westside Pizza">Full</button> <br>
-<table class="table"></table>
+				<table class="main_table_">
+					<tr>
+						<th>Name</th>
+						<th><div>
+        <select class="table_selekt">
+            <option value="вариант1">__</option>
+            <option value="вариант2">Вариант 2</option>
+            <option value="вариант3">Вариант 3</option>
+            <!-- Дополнительные варианты могут быть добавлены здесь -->
+        </select>
+    </div></th>
+						<th><div>
+        <select class="table_selekt">
+            <option value="вариант1">__</option>
+            <option value="вариант2">Вариант 2</option>
+            <option value="вариант3">Вариант 3</option>
+            <!-- Дополнительные варианты могут быть добавлены здесь -->
+        </select>
+    </div></th>
+						<th><div>Ranking</div></th>
+						<th><div>
+        <select class="table_selekt">
+            <option value="вариант1">__</option>
+            <option value="вариант2">Вариант 2</option>
+            <option value="вариант3">Вариант 3</option>
+            <!-- Дополнительные варианты могут быть добавлены здесь -->
+        </select>
+    </div></th>
+						<th><div>Trend</div></th>
+						<th><div>
+        <select class="table_selekt">
+            <option value="вариант1">__</option>
+            <option value="вариант2">Вариант 2</option>
+            <option value="вариант3">Вариант 3</option>
+            <!-- Дополнительные варианты могут быть добавлены здесь -->
+        </select>	
+     </div>
+					</tr>
+<tr class="bottom-row">
+            <th colspan="7">PROFITABILITY</th>
+        </tr>
+					<tr>
+						<td><div>Food Sales</div></td>
+						<td><div>$89.934</div></td>
+						<td><div>$89.934</div></td>
+						<td><div>1 touch of 20</div></td>
+						<td><div>$89.934</div></td>
+						<td><div><img src="../images/ArrowsDownUp.svg" alt="">1.66%</div></td>
+						<td><div>$89.934</div></td>
+						</td>	
+					</tr>					
+				</table>	
+			</div>									
+		</div>
+   </div>
+</div>
 	<main>
 		 <aside id="aside">
 		<div class="knopki">
@@ -105,9 +175,9 @@
 				<img src="../img/GearSix.svg" alt="Settings">
 			</button> <br>
 			</div>
-	</aside> 
-		
+	</aside> 	
 	</main>
+<script type="text/javascript" src="../Java/java.js"></script>  
 
 </body>
 </html>
