@@ -41,10 +41,14 @@
 		<div class="nes"><br><span>NESTED ITEMS</span><br>
 		<div class="uni"><img src="../img/uni.svg" alt="Unit 40 - YAKIMA"><span>Unit 40 - YAKIMA</span><br></div>
 		</div>
-		<button class="menu_butt"><img src="../img/kik.svg">Report</button> <br>
-		<p id="outputText"><br>Monthly Scorecard Report<br>
-		<br>Monthly Trends Report<br>
-		<br>Break-Even Analysis Report<br></p>
+		<button class="menu_butt" id="menu_button">
+    <img src="../img/kik.svg">Report
+</button>
+<div id="menu_dropdown" class="menu_dropdown">
+    <a href="#" class="dropdown_link">Monthly Scorecard Report</a>
+    <a href="#" class="dropdown_link">Monthly Trends Report</a>
+    <a href="#" class="dropdown_link">Break-Even Analysis Report</a>
+</div>
 		<div class="mon">
 		
 		</div>
@@ -132,11 +136,21 @@
         </tr>
 					<tr>
 						<td><div>Food Sales</div></td>
-						<td><div>$89.934</div></td>
+						<td>
+    <div class="main_table_user_status">
+        <img src="../img/Ellipse_2.svg" alt="Ellipse">
+                   
+    </div>
+    <div class="positive_block">
+        $89.934
+        <span class="positive_text">Positive</span>
+    </div>
+</td>
+
 						<td><div>$89.934</div></td>
 						<td><div>1 touch of 20</div></td>
 						<td><div>$89.934</div></td>
-						<td><div><img src="../images/ArrowsDownUp.svg" alt="">1.66%</div></td>
+						<td><div><img src="../img/TrendDown.svg" alt="">1.66%</div></td>
 						<td><div>$89.934</div></td>
 						</td>	
 					</tr>					
@@ -177,7 +191,6 @@
 			</div>
 	</aside> 	
 	</main>
-<script type="text/javascript" src="../Java/java.js"></script>  
-
+<script type="text/javascript" src="../Java/java.js"></script>
 </body>
 </html>

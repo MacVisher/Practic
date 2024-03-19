@@ -25,20 +25,19 @@ ymaps.ready(function() {
 
     // Добавляем метку на карту
     myMap.geoObjects.add(placemark1);
-    
-    // Добавляем обработчик события для кнопки
-    var asideSlideButton = document.getElementById("aside_slide_button");
-    var aside = document.getElementById("aside");
+ // Добавляем обработчик события на наведение курсора на кнопку
+var menuButton = document.getElementById("menu_button");
+var menuDropdown = document.getElementById("menu_dropdown");
 
-    asideSlideButton.addEventListener("click", function() {
-        aside.classList.toggle("collapsed");
-    });
-// Получаем кнопку и текст
-var button = document.querySelector(".menu_butt");
-var outputText = document.querySelector("#outputText");
+menuButton.addEventListener("mouseover", function() {
+    menuDropdown.style.display = "block";
+});
 
-// Добавляем обработчик события на нажатие кнопки
-button.addEventListener("click", function() {
-    // Тогглим класс "active", который управляет видимостью текста
-    outputText.classList.toggle("active");
+// Прячем выпадающее меню, когда курсор уходит с кнопки или с выпадающего меню
+menuButton.addEventListener("mouseleave", function() {
+    menuDropdown.style.display = "none";
+});
+
+menuDropdown.addEventListener("mouseleave", function() {
+    menuDropdown.style.display = "none";
 });

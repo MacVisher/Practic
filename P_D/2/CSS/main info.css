@@ -344,83 +344,6 @@ body-color: #21222D; /* Цвет фона для темной темы */
     color: #FFFFFF;
 }
 
-.f_hat {
-    position: fixed;
-    width: 1460px;
-    height: 72px;
-    left: 384px;
-    top: 80px;
-    background: #FCFCFC;
-    border-radius: 10px 10px 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0;
-}
-input[type=checkbox]{
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-.toggle-button {
-    position: fixed;
-    cursor: pointer;
-    top: 37px;
-    left: -392px;
-    text-indent: -9999px;
-    width: 43px;
-    height: 24px;
-    background: #D1D1D6;
-    display: block;
-    border-radius: 100px;
-    position: relative;
-}
-
-.toggle-button:after {
-    content: '';
-    position: fixed;
-    top: 4px;
-    left: 4px;
-    width: 16px;
-    height: 16px;
-    background: #fff;
-    border-radius: 90px;
-    transition: 0.3s;
-}
-
-input:checked + .toggle-button {
-  background: #37BE55;
-}
-
-input:checked + .toggle-button:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
-}
-
-.toggle-button:active:after {
-  width: 20px;
-}
-/* Стили для кнопки */
-.custom-button {
-    display: inline-block;
-    position: fixed;
-    width: 266px;
-    top: 94px;
-    left: 421px;
-    height: 44px;
-    padding: 12px 20px;
-    border-radius: 10px;
-    border: 2px solid #37BE55;
-    background-color: #37BE55;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.custom-button:active {
-  transform: translateY(1px);
-}
-
 /* centering */
 body {
   display: flex;
@@ -444,86 +367,41 @@ body {
     width: 192px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 34px;
+    margin-left: 26px;
     color: black;
-    top: 189px;
+    top: 105px;
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 0.05em;
     text-align: left;
 }
-.spisok {
+.textC {
+    font-family: 'Google Sans', sans-serif;
     position: fixed;
-    height: 44px;
-    width: 260px;
-    top: 96px;
-    left: 1278px;
-    border-radius: 10px;
-    border-color: #E9EBEC;
-    background-size: cover;
-}
-.spisok2 {
-    position: fixed;
-    height: 44px;
-    width: 260px;
-    top: 96px;
-    left: 1562px;
-    border-radius: 10px;
-    border-color: #E9EBEC;
-    background-size: cover;
+    width: 192px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 26px;
+    color: black;
+    top: 180px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-align: left;
 }
 .block {
     position: fixed;
     width: 1460px;
     height: 696px;
     left: 384px;
-    top: 170px;
+    top: 155px;
     background: #FCFCFC;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
     margin-top: 0;
-}
-.quik {
-    position: fixed;
-    width: 180px;
-    height: 44px;
-    top: 190px;
-    left: 1407px;
-    padding: 12px 20px 12px 20px;
-    border-radius: 10px;
-    border: 2px;
-    gap: 60px;
-    border-radius: 10px;
-    border: 2px solid #263238;
-    background-color: #FCFCFC;
-font-size: 16px;
-font-weight: 700;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: center;
-}
-.full {
-    position: fixed;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 44px;
-    top: 189px;
-    left: 1616px;
-    padding: 12px 20px 12px 20px;
-    border-radius: 10px;
-    border: 2px;
-    gap: 10px;
-    background: #263238;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FCFCFC;
 }
 .knopki{
   margin-top: 54px;  
@@ -577,197 +455,67 @@ text-align: left;
 .uni span {
     margin-left: 20px;
 }
-.nes {
-    position: absolute;
-    width: 162px;
-    height: 57px;
-    left: -6px;
-    top: -306px;
-    font-size: 13px;
-    align-items: center;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #B9B9B9;
-}
-.mon {
-    position: absolute;
-    top: -125px;
-    left: 10px;
-    width: 136px;
-    height: 17px;
-    font-family: 'Google Sans';
-    font-style: normal;
-    font-size: 13px;
-    line-height: 17px;
+.f_hat {
+    position: fixed;
+    width: 1460px;
+    height: 72px;
+    left: 384px;
+    top: 80px;
+    background: #FCFCFC;
+    border-radius: 10px 10px 10px 0px;
     display: flex;
-    align-items: center;
-    font-feature-settings: 'tnum' on, 'lnum' on;
-    color: #263238;
-    flex-grow: 0;
-    white-space: nowrap;
+    justify-content: space-between;
+    margin-top: 0;
 }
-.gog {
-    width: 136px;
-    height: 17px;
-    font-family: 'Google Sans';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 13px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    font-feature-settings: 'tnum' on, 'lnum' on;
-    color: #263238;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-.text_menu{
-position: absolute;
-width: 29px;
-height: 17px;
-left: 40px;
-top: 353px;
-font-family: 'Google Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 13px;
-line-height: 17px;
-display: flex;
+.name {
+  display: flex;
+flex-direction: column;
 align-items: center;
-font-feature-settings: 'tnum' on, 'lnum' on;
-color: #263238;
-}
-
-.main_table_user_status {
-  width: fit-content;
-  border-radius: 10px;
-  border: none;
-  background-color: #DFF2E3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.table_container {
-  border: 2px solid #e9ebec;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-.main_table_ {
-    width: 100%;
-    border-spacing: 0;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: absolute;
-    width: 1388px;
-    height: 642px;
-    left: -9px;
-    top: 48px;
-    background: #FFFFFF;
-    border: 1px solid #E9EBEC;
-    border-radius: 10px;
-}
-
-.main_table_ th, td{
-  border-bottom: 2px solid #e9ebec;
-
-}
-
-.main_table_ tr th div, td div {
-  display: flex;
-  align-items: center;
-
-}
-
-.main_table_ tr th, td {
-  padding: 18px 14px;
-}
-
-.main_table_ tr th:first-child, td:first-child {
-  padding-left: 20px;
-}
-
-.main_table_ th {
-  padding-top: 27px !important;
-  padding-bottom: 27px !important;
-}
-.selects_buttons {
-  border: none;
-  background-color: white;
-  border-radius: 1px;
-}
-.table_selekt{
-width:207px;
-height:44px;
+padding: 0px;
+  position: absolute;
+      width: 780px;
+      height: 44px;
+      top: 153px;
+      left: 20px;
+      gap: 0px;
+      border-radius: 10px 10px 10px 10px;
 border-radius: 8px;
     border-color: #E9EBEC;
-    background-size: cover;   
-}
-.main_table_ tr:first-child {
-  padding-left: 20px;
-}
-td.example {
-    padding: 20px; /* Задаем отступы по всем сторонам в 20px */
-}
-.bottom-row {
-    width: 1388px;
-    height: 27px;
-    padding: 6px 0px 0px 0px;
-    background: #FAFAFA;
-}
-#outputText {
-    font-size: 18px;
-    margin-top: 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-#outputText.active {
-    max-height: 100px; /* Высота, до которой будет выдвигаться текст */
-    transition: max-height 0.3s ease-in;
-}
-.menu_dropdown {
-    display: none;
+    }
+  .web {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
     position: absolute;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    z-index: 1000;
+    width: 780px;
+    height: 44px;
+    top: 237px;
+    left: 20px;
+    gap: 0px;
+    border-radius: 10px 10px 10px 10px;
+    border-radius: 8px;
+        border-color: #E9EBEC;
+        background-size: cover;
 }
-
-.menu_butt:hover + .menu_dropdown,
-.menu_dropdown:hover {
-    display: block;
+.des {
+    position: absolute;
+    width: 780px;
+    height: 128px;
+    left: 20px;
+    top: 322px;
+    border-radius: 8px;
+        border-color: #E9EBEC;
+        background-size: cover;
 }
-
-.dropdown_link {
-    display: block;
-    color: #333;
-    text-decoration: none;
-    margin-top: 5px;
-}
-
-.dropdown_link:hover {
-    background-color: #f0f0f0;
-}
-.main_table_user_status {
-    display: flex;
-    align-items: center;
-}
-
-.positive_block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.positive_block .positive_text {
-    margin-left: 10px; /* Добавляем небольшой отступ между долларом и текстом "Positive" */
+.spisok {
+    position: absolute;
+    width: 780px;
+    height: 44px;
+    left: 20px;
+    top: 478px;
+    border-radius: 10px;
+    border-color: #E9EBEC;
+    background-size: cover;
+    
 }
