@@ -468,21 +468,6 @@ text-align: left;
     margin-top: 0;
 }
 .name {
-  display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-  position: absolute;
-      width: 780px;
-      height: 44px;
-      top: 153px;
-      left: 20px;
-      gap: 0px;
-      border-radius: 10px 10px 10px 10px;
-border-radius: 8px;
-    border-color: #E9EBEC;
-    }
-  .web {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,32 +475,123 @@ border-radius: 8px;
     position: absolute;
     width: 780px;
     height: 44px;
-    top: 237px;
+    top: 66px;
     left: 20px;
     gap: 0px;
     border-radius: 10px 10px 10px 10px;
     border-radius: 8px;
-        border-color: #E9EBEC;
-        background-size: cover;
+    border-color: #E9EBEC;
+}
+ .web {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 780px;
+    height: 44px;
+    top: 138px;
+    left: 20px;
+    gap: 0px;
+    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border-color: #E9EBEC;
+    background-size: cover;
 }
 .des {
     position: absolute;
     width: 780px;
     height: 128px;
     left: 20px;
-    top: 322px;
-    border-radius: 8px;
-        border-color: #E9EBEC;
-        background-size: cover;
+    top: 216px;
+    border-radius: 10px;
+    border-color: #E9EBEC;
+    background-size: cover;
 }
 .spisok {
     position: absolute;
     width: 780px;
     height: 44px;
+    top: 376px;
     left: 20px;
-    top: 478px;
     border-radius: 10px;
     border-color: #E9EBEC;
     background-size: cover;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+}
+.save {
+    width: 253px;
+    height: 44px;
+    top: 20px;
+    left: 1051px;
+    gap: 20px;
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tag {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 10px;
+    position: relative;
+    width: 130px;
+    height: 44px;
+    left: -953px;
+    top: 434px;
+    background: #DAF2FF;
+    border: 2px solid #DAF2FF;
+    border-radius: 200px;
+    cursor: pointer;
+    margin-right: 29px;
+}
+.quik {
+    position: fixed;
+    width: 180px;
+    height: 44px;
+    top: 94px;
+    left: 1407px;
+    background-color: #FCFCFC;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: underline;
+    border: none;
+}
+.full {
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 44px;
+    top: 94px;
+    left: 1616px;
+    padding: 12px 20px 12px 20px;
+    border-radius: 10px;
+    border: 2px;
+    gap: 10px;
+    background: #263238;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FCFCFC;
 }

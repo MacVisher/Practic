@@ -41,3 +41,11 @@ menuButton.addEventListener("mouseleave", function() {
 menuDropdown.addEventListener("mouseleave", function() {
     menuDropdown.style.display = "none";
 });
+function toggleDarkMode() {
+  var body = document.body;
+  body.classList.toggle('dark-mode');
+}
+function deleteTag(tag) {
+    tag.style.display = "none";
+}
+
