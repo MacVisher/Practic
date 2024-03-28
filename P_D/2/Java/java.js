@@ -25,27 +25,32 @@ ymaps.ready(function() {
 
     // Добавляем метку на карту
     myMap.geoObjects.add(placemark1);
- // Добавляем обработчик события на наведение курсора на кнопку
-var menuButton = document.getElementById("menu_button");
-var menuDropdown = document.getElementById("menu_dropdown");
-
-menuButton.addEventListener("mouseover", function() {
-    menuDropdown.style.display = "block";
 });
+function closeTextMenu() {
+    var textMenu = document.querySelector('.text_menu');
+    var menu = document.querySelector('.menu');
+    var block = document.querySelector('.block');
+    var fHat = document.querySelector('.f_hat');
+    var hat = document.querySelector('.hat');
 
-// Прячем выпадающее меню, когда курсор уходит с кнопки или с выпадающего меню
-menuButton.addEventListener("mouseleave", function() {
-    menuDropdown.style.display = "none";
-});
+    // Добавляем классы анимации закрытия
+    textMenu.classList.add('close-animation');
+    menu.classList.add('close-animation');
 
-menuDropdown.addEventListener("mouseleave", function() {
-    menuDropdown.style.display = "none";
-});
-function toggleDarkMode() {
-  var body = document.body;
-  body.classList.toggle('dark-mode');
+    // Ждем завершения анимации
+    setTimeout(function() {
+        // Скрываем элементы
+        textMenu.style.display = 'none';
+        menu.style.display = 'none';
+
+        // Добавляем классы анимации закрытия для остальных элементов
+        block.classList.add('close-animation');
+        fHat.classList.add('close-animation');
+        hat.classList.add('close-animation');
+
+        // Перемещаем остальные элементы влево
+        block.style.left = '115px'; // Возможно, вам нужно будет задать другое значение
+        fHat.style.left = '115px';
+        hat.style.left = '115px';
+    }, 500); // 500 миллисекунд, это время длительности анимации
 }
-function deleteTag(tag) {
-    tag.style.display = "none";
-}
-
